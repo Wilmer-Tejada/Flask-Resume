@@ -1,0 +1,271 @@
+# Profile section
+profile:
+  first_name: Wilmer
+  last_name: Tejada
+  picture: static/img/IMG_1821.jpg
+  contact:
+    address_one: San Jose, CA
+    address_two:
+    phone: (661)579-5040
+  email: wilmer.tejada@yahoo.com
+  description:
+    - Welcome to my website created using Flask, a Python library.
+    - I am a Data Analyst with plenty of experience in SQL, Python, and R.
+    - I am also currently pursuing a second Masters degree in Computer Science with a specialization in Machine Learning.
+
+
+# Social section
+social:
+  github: https://github.com/Wilmer-Tejada
+  linkedin: https://www.linkedin.com/in/wilmer-tejada/
+
+
+# Experience section
+experience:
+  item0:
+    position: Research Data Analyst II
+    company: San Jose-Evergreen College District
+    from: Feb 2019
+    to: Present (2 yrs)
+    description:
+      - Created 10+ Power BI dashboards to track key metrics crucial to evaluating performance including enrollment counts, student success rates, retention rates, awards, etc.
+      - Wrote 100+ SQL Server queries, sometimes involving millions of records.
+      - Established a Git repository for standardized reports and queries.
+      - Served as the liaison between analysts and the database administrators, managing a schema in SQL Server.
+      - Fit a logistic regression model, using Python, to determine how a student’s GPA and highest level of high school English affect their chances of succeeding in college level English. This replaced English placement exams and we saw an increase in the number of students succeeding in college English by more than 5%.
+
+  item1:
+    position: Research Analyst
+    company: Las Positas College
+    from: Feb 2017
+    to: Feb 2019 (2 yrs)
+    description:
+      - Reported on college KPI’s using visualizations in R Notebooks/Jupyter.
+      - Automated repetitive tasks, including parsing Excel reports and PDF files using Python. This cut down the time for manually inputting records to just a few seconds per file.
+      - Saved hundreds of work hours for the Institutional Research department by writing scripts (in R) to automate data tasks such as merging and cleaning data, filtering, visualizations, etc.
+      - Helped maintain Tableau dashboards.
+
+  #  item2:
+#    position: AI Consultant
+#    company: NULLSEC (Startup)
+#    from: July 2019
+#    to: September 2019
+#    description: >
+#      Working as an AI consultant for NULLSEC, a computer security company focused on ethical hacking. Particularly helping in the development of NullRansom, an analyzer-debugger software with the purpose of filtering TCP protocol requests, preventing preventively being targeted by malware and ransomware viruses.
+#    link: http://www.nullsec.site
+  #reference: https://rodolfoferro.xyz/resume/
+
+
+# Education section
+education:
+  item1:
+    institution: Georgia Institute of Technology
+    program: M.S. Computer Science - Machine Learning Specialization
+    description:
+      - Artificial Intelligence for Robotics
+      - Software Architecture & Design
+      - Computer Networks
+      - Database Systems Concepts & Design
+    from: January 2019
+    to: Present
+  item2:
+    institution: California State University, East Bay
+    program: M.S. Statistics
+    description:
+      - Probability Theory
+      - Statistical Theory
+      - Mathematical Statistics I & II
+      - Statistical Inference
+      - ANOVA Models
+      - Regression Models
+      - Machine Learning in R
+      - Data Visualization
+      - R for Data Science
+      - SAS Programming
+      - Statistical Computing
+    from: January 2017
+    to: May 2019
+  item3:
+    institution: University of California, Santa Barbara
+    program: B.S. Statistics
+    #description:
+    from: September 2012
+    to: July 2016
+
+
+
+
+
+# Skills section
+tools:
+  # Consider that the following are fa icons:
+  #   https://fontawesome.com/icons?d=gallery&s=brands
+  - python
+  - r-project
+  - git-alt
+  - github
+extra_skills:
+  - SQL Server
+  - Microsoft Power BI
+  - Python – Flask, pandas, NumPy, matplotlib, Tensorflow, etc.
+  - R – dplyr, lubridate, ggplot, odbc, etc.
+  - Web scraping and web automation using Selenium
+  - Flask Web Development
+  - Beginner in Java
+
+
+# Talks and workshops section
+#workshops:
+#  item0:
+#    event: TEDxUNAMLeón
+#    workshop: AI in modern times, February 2020.
+#    material:
+#    link: https://www.ted.com/tedx/events/35293
+#  item1:
+#    event: PyCon Colombia 2020
+#    workshop: 'Workshop – DLaaS: Building cloud-based intelligent solutions, February 2020.'
+#    material: https://github.com/RodolfoFerro/PyConCo20
+#    link: https://www.pycon.co/ponentes/rodolfo-ferro/
+#  item2:
+#    event: International Meeting on Artificial Intelligence and its Applications (RIIAA) 2.0.
+#    workshop: Workshop – Deep Learning as a Service (DLaaS), August 2019.
+#    material: https://github.com/RodolfoFerro/RIIAA19-DLaaS
+#    link: https://riiaa.org
+#  item3:
+#    event: LAB León Web Dev Crash Course 2019.
+#    workshop: Crash Course – Introduction to Web Development with Python and Flask, August 2019.
+#    material: https://github.com/RodolfoFerro/Flask101
+#    link: https://flask101.glitch.me
+#  item4:
+#    event: DevDay León 2019 by Hackademy.
+#    workshop: Workshop – (AI) API development with Python, August 2019.
+#    material: https://github.com/RodolfoFerro/PythonBaseAPI
+#    link:
+#  item5:
+#    event: Clubes de Ciencia México 2019.
+#    workshop: Workshop – Revealing the Hidden Hyperspectrum with Artificial Neurons, July 2019.
+#    material: https://rodolfoferro.xyz/hyperspectrum/
+#    link:
+#  item6:
+#    event: DevDay Mérida 2019.
+#    workshop: Workshop – Artificial Intelligence with Python, July 2019.
+#    material: https://github.com/RodolfoFerro/DevDayMid2019
+#    link:
+#  item7:
+#    event: Talent Land 2019.
+#    workshop: Talk – A.I. in modern times, April 2019.
+#    material:
+#    link: https://jaliscotalentland2019.sched.com/event/MzAs/inteligencia-artificial-en-tiempos-modernos
+#  item8:
+#    event: PythonDay México 2018.
+#    workshop: Talk – Data Science with Python, December 2018.
+#    material: https://github.com/RodolfoFerro/DataSciPy
+#    link:
+#  item9:
+#    event: PythonDay México 2018.
+#    workshop: Workshop – Machine Learning as a Service (MLaaS), November 2018.
+#    material: https://github.com/RodolfoFerro/MLaaS
+#    link:
+#  item10:
+#    event: HERE Hackathon at Technological University of Leon.
+#    workshop: Mentor on the event. Talk – Integration of Technological Solutions, November 2018.
+#    material: https://github.com/RodolfoFerro/HereHackathon
+#    link:
+#  item11:
+#    event: 6th. International Conference in Software Engineering Research and Innovation (CONISOFT).
+#    workshop: Workshop – Introduction to Neural Networks with Keras, October 2018.
+#    material: https://github.com/RodolfoFerro/CONISOFT2018
+#    link: http://conisoft.org/2018/public/
+#  reference: https://rodolfoferro.xyz/resume/
+
+
+# Projects section
+projects:
+  item1:
+    title: flask-resume-template
+    subtitle: A resume template built with Flask
+    description: An easy-to-configure simple resume template built with Flask and Bootstrap.
+    link: https://flask-resume-template.glitch.me
+    github: https://github.com/Wilmer-Tejada/Flask-Resume
+    img: flask-resume-template.png
+    tags: [Flask, Python, Bootstrap]
+#  item2:
+#    title: DLaaS
+#    subtitle: Google Colab Notebooks
+#    description: A set of Google Colab notebooks and a Flask base API to learn and serve Deep Learning. Prepared for my workshop at RIIAA 2.0.
+#    link: https://rodolfoferro.xyz/RIIAA19-DLaaS/
+#    github: https://github.com/RodolfoFerro/RIIAA19-DLaaS
+#    img: riiaa.png
+#    tags: [Python, Tensorflow 2.0, Keras, Deep Learning]
+#  item3:
+#    title: impipes
+#    subtitle: Python package
+#    description: A Python package to build image pipelines in a simple way. Preprocess data to feed neural networks in an easier way.
+#    link: https://impipes.readthedocs.io/en/latest/
+#    github: https://github.com/RodolfoFerro/impipes
+#    img: impipes.png
+#    tags: [Python, PyPI, Images, Data Preprocessing, Documentation]
+#  item4:
+#    title: MNIST Web Classifier
+#    subtitle: A CNN served as a web platform
+#    description: Classify handwritten digits directly on your computer or your phone. As simple as taking a picture of a written random multi-digit number.
+#    link: https://flask-micro-template.glitch.me
+#    github: https://github.com/RodolfoFerro/flask-micro-template
+#    img: keras-mnist.png
+#    tags: [Python, Bootstrap, Web Platform, Flask, MNIST, CNN, Keras]
+#  item5:
+#    title: EmojiMerida
+#    subtitle: Google Colab Notebook
+#    description: A real-time coding session with an emotion recognizer on facial expressions for a Data Mérida meetup (01/04/2019). The Ai was developed with Python and Keras.
+#    link: https://colab.research.google.com/github/RodolfoFerro/EmojiMerida/blob/master/Data_M%C3%A9rida.ipynb
+#    github:
+#    img: data-merida.png
+#    tags: [Python, Computer Vision, Keras, Neural Networks]
+#  item6:
+#    title: PythonBaseAPI
+#    subtitle: API template built with Flask
+#    description: API template built with Python and Flask. Serve an Iris classifier as an API. Content for a workshop.
+#    link: https://docs.google.com/presentation/d/e/2PACX-1vSc7Q82-lwQ8fKgR5WcT7Y0r9kotcYiNuyYjHRlF-fdhf6lkIrF9B_2akvzL-ZQ6ZAyT1lxM9f0mPdx/pub?start=false&loop=false&delayms=3000
+#    github: https://github.com/RodolfoFerro/PythonBaseAPI
+#    img: python-base-api.png
+#    tags: [Flask, Python, API, scikit-learn]
+#  item7:
+#    title: flask-micro-template
+#    subtitle: A micro template built with Flask
+#    description: A micro template built with Flask and Bootstrap. Used for minimal testing in Glitch.
+#    link: https://flask-micro-template.glitch.me
+#    github: https://github.com/RodolfoFerro/flask-micro-template
+#    img: flask-micro-template.png
+#    tags: [Flask, Python, Bootstrap]
+#  item8:
+#    title: moltransform
+#    subtitle: Python package
+#    description: Molecular transformations for graphic displaying using Cartesian coordinates.
+#    link: https://pypi.org/project/moltransform/
+#    github: https://github.com/RodolfoFerro/moltransform
+#    img: moltransform.png
+#    tags: [Python, PyPI, Molecules, Rigid Transformations]
+#  item9:
+#    title: FitbitVersa-SimpleOmnitrix
+#    subtitle: Fitbit Versa Clockface
+#    description: My first clock face for Fitbit Versa, inspired in Ben 10's Omnitrix.
+#    link: https://gallery.fitbit.com/details/6c75fa41-8de0-41db-b851-f21f7447018b
+#    github: https://github.com/RodolfoFerro/FitbitVersa-SimpleOmnitrix
+#    img: simple-omnitrix.png
+#    tags: [TypeScript, Ben 10, Fitbit, Fitbit Versa]
+
+
+# Certifications and awards section
+#awards:
+#  - 'Winner – #TFWorld TF 2.0 Challenge – TensorFlow at Devpost 2020'
+#  - Academy and Technology – Statal Youth Prize Guanajuato 2018
+#  - Quantum Computing 101 – IBM Q Certification Badge 2018
+#  - 1st. Place – HDI Challenge – Talent City Hackathon 2018
+#  - 1st. Place – SWITCH Hackathon 2017
+#  - 1st. Place – IBM Hackapalooza – Bluehack Hackathon 2017
+#  - 1st. Place – 12th. Creativity and Innovation Contest at the University of Guanajuato 2017
+#  - 1st. Place – Centro Fox National Hackathon 2017
+#  - 1st. Place – 6th. Creativity and Innovation Contest, DCEA-UG 2016
+#  - Silver Award – SynBio Giant Jamboree – iGEM  2016
+#  - 1st. Place – 4th. Creativity and Innovation Contest, DCNE-UG 2016
+#  - 1st. Place – Fintech – HackBajío Hackathon 2016
