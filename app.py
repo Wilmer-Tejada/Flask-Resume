@@ -16,6 +16,9 @@ def index():
 
     return render_template('index.html', data=website_data)
 
+@app.route('/d3-examples')
+def graph():
+    return render_template('d3-graph/graph.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
