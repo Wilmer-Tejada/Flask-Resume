@@ -66,6 +66,8 @@ education:
       - Software Architecture & Design
       - Computer Networks
       - Database Systems Concepts & Design
+      - Machine Learning for Trading
+      - Data and Visual Analytics
     from: January 2019
     to: Present
   item2:
@@ -146,37 +148,7 @@ extra_skills:
 #    workshop: Workshop – Revealing the Hidden Hyperspectrum with Artificial Neurons, July 2019.
 #    material: https://rodolfoferro.xyz/hyperspectrum/
 #    link:
-#  item6:
-#    event: DevDay Mérida 2019.
-#    workshop: Workshop – Artificial Intelligence with Python, July 2019.
-#    material: https://github.com/RodolfoFerro/DevDayMid2019
-#    link:
-#  item7:
-#    event: Talent Land 2019.
-#    workshop: Talk – A.I. in modern times, April 2019.
-#    material:
-#    link: https://jaliscotalentland2019.sched.com/event/MzAs/inteligencia-artificial-en-tiempos-modernos
-#  item8:
-#    event: PythonDay México 2018.
-#    workshop: Talk – Data Science with Python, December 2018.
-#    material: https://github.com/RodolfoFerro/DataSciPy
-#    link:
-#  item9:
-#    event: PythonDay México 2018.
-#    workshop: Workshop – Machine Learning as a Service (MLaaS), November 2018.
-#    material: https://github.com/RodolfoFerro/MLaaS
-#    link:
-#  item10:
-#    event: HERE Hackathon at Technological University of Leon.
-#    workshop: Mentor on the event. Talk – Integration of Technological Solutions, November 2018.
-#    material: https://github.com/RodolfoFerro/HereHackathon
-#    link:
-#  item11:
-#    event: 6th. International Conference in Software Engineering Research and Innovation (CONISOFT).
-#    workshop: Workshop – Introduction to Neural Networks with Keras, October 2018.
-#    material: https://github.com/RodolfoFerro/CONISOFT2018
-#    link: http://conisoft.org/2018/public/
-#  reference: https://rodolfoferro.xyz/resume/
+
 
 
 # Projects section
@@ -190,21 +162,21 @@ projects:
     img: website-image.png
     tags: [Flask, Python, Bootstrap]
   item2:
-    title: Power-BI
+    title: Embedded Power BI
 #    subtitle: Power-BI quick example
     description: A quick mock up of a Power BI dashboard.
-    link: https://rodolfoferro.xyz/RIIAA19-DLaaS/
-    github: https://github.com/RodolfoFerro/RIIAA19-DLaaS
-    img: riiaa.png
+    link: powerbi
+    github:
+    img: powerbi-white.jpeg
     tags: [PowerBI]
   item3:
     title: Dashboard Screenshot Examples
 #    subtitle: Screenshots of actual production dashboards
     description: Some of these dashboards are currently being used by upper management.
-    link: https://impipes.readthedocs.io/en/latest/
-#    github: https://github.com/RodolfoFerro/impipes
+    link: dashboard-screenshots
+    github:
     img: power-BI.png
-    tags: [Power BI Images, Data Preprocessing]
+    tags: [Power BI, Data Preprocessing]
 #  item4:
 #    title: MNIST Web Classifier
 #    subtitle: A CNN served as a web platform
@@ -221,38 +193,6 @@ projects:
 #    github:
 #    img: data-merida.png
 #    tags: [Python, Computer Vision, Keras, Neural Networks]
-#  item6:
-#    title: PythonBaseAPI
-#    subtitle: API template built with Flask
-#    description: API template built with Python and Flask. Serve an Iris classifier as an API. Content for a workshop.
-#    link: https://docs.google.com/presentation/d/e/2PACX-1vSc7Q82-lwQ8fKgR5WcT7Y0r9kotcYiNuyYjHRlF-fdhf6lkIrF9B_2akvzL-ZQ6ZAyT1lxM9f0mPdx/pub?start=false&loop=false&delayms=3000
-#    github: https://github.com/RodolfoFerro/PythonBaseAPI
-#    img: python-base-api.png
-#    tags: [Flask, Python, API, scikit-learn]
-#  item7:
-#    title: flask-micro-template
-#    subtitle: A micro template built with Flask
-#    description: A micro template built with Flask and Bootstrap. Used for minimal testing in Glitch.
-#    link: https://flask-micro-template.glitch.me
-#    github: https://github.com/RodolfoFerro/flask-micro-template
-#    img: flask-micro-template.png
-#    tags: [Flask, Python, Bootstrap]
-#  item8:
-#    title: moltransform
-#    subtitle: Python package
-#    description: Molecular transformations for graphic displaying using Cartesian coordinates.
-#    link: https://pypi.org/project/moltransform/
-#    github: https://github.com/RodolfoFerro/moltransform
-#    img: moltransform.png
-#    tags: [Python, PyPI, Molecules, Rigid Transformations]
-#  item9:
-#    title: FitbitVersa-SimpleOmnitrix
-#    subtitle: Fitbit Versa Clockface
-#    description: My first clock face for Fitbit Versa, inspired in Ben 10's Omnitrix.
-#    link: https://gallery.fitbit.com/details/6c75fa41-8de0-41db-b851-f21f7447018b
-#    github: https://github.com/RodolfoFerro/FitbitVersa-SimpleOmnitrix
-#    img: simple-omnitrix.png
-#    tags: [TypeScript, Ben 10, Fitbit, Fitbit Versa]
 
 
 # Certifications and awards section
