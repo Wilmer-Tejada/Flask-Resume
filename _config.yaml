@@ -183,28 +183,28 @@ extra_skills:
 projects:
   item1:
     title: flask-resume-template
-    subtitle: A resume template built with Flask
+#    subtitle: A resume template built with Flask
     description: An easy-to-configure simple resume template built with Flask and Bootstrap.
     link: https://github.com/Wilmer-Tejada/Flask-Resume
     github: https://github.com/Wilmer-Tejada/Flask-Resume
     img: website-image.png
     tags: [Flask, Python, Bootstrap]
-#  item2:
-#    title: DLaaS
-#    subtitle: Google Colab Notebooks
-#    description: A set of Google Colab notebooks and a Flask base API to learn and serve Deep Learning. Prepared for my workshop at RIIAA 2.0.
-#    link: https://rodolfoferro.xyz/RIIAA19-DLaaS/
-#    github: https://github.com/RodolfoFerro/RIIAA19-DLaaS
-#    img: riiaa.png
-#    tags: [Python, Tensorflow 2.0, Keras, Deep Learning]
-#  item3:
-#    title: impipes
-#    subtitle: Python package
-#    description: A Python package to build image pipelines in a simple way. Preprocess data to feed neural networks in an easier way.
-#    link: https://impipes.readthedocs.io/en/latest/
+  item2:
+    title: Power-BI
+#    subtitle: Power-BI quick example
+    description: A quick mock up of a Power BI dashboard.
+    link: https://rodolfoferro.xyz/RIIAA19-DLaaS/
+    github: https://github.com/RodolfoFerro/RIIAA19-DLaaS
+    img: riiaa.png
+    tags: [PowerBI]
+  item3:
+    title: Dashboard Screenshot Examples
+#    subtitle: Screenshots of actual production dashboards
+    description: Some of these dashboards are currently being used by upper management.
+    link: https://impipes.readthedocs.io/en/latest/
 #    github: https://github.com/RodolfoFerro/impipes
-#    img: impipes.png
-#    tags: [Python, PyPI, Images, Data Preprocessing, Documentation]
+    img: power-BI.png
+    tags: [Power BI Images, Data Preprocessing]
 #  item4:
 #    title: MNIST Web Classifier
 #    subtitle: A CNN served as a web platform

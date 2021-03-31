@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 {#<script type="text/javascript" src="lib/d3.v5.min.js"></script>#}
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <style>
 
 path.link {
@@ -42,7 +42,7 @@ text {
 <title></title></head><body>
 <script>
 
-d3.dsv(",", "../templates/d3-graph/board_games.csv", function(d) {
+d3.dsv(",", "static/data/board_games.csv", function(d) {
   return {
     source: d.source,
     target: d.target,
