@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="static/js/d3.v5.min.js"></script>
+<script src="static/js/d3-legend.min.js"></script>
+<script src="static/js/d3-tip.min.js"></script>
+<script src="static/js/d3-geo-projection.v2.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Choropleth</title>
+</head>
+<body>
+    <h1>Board Game Ratings By Country</h1>
+    <p>Select a game from the drop down. Hover over any country to get a more detailed look. Legend is reactive and changes based on the domain of the underlying data.</p>
+	<!-- Create dropdown element here. Options should be added after reading in game file, they should not be created here.-->
+    <label>Select Board Game:
+        <select id = 'dropdown'></select>
+    </label>
+	<!-- append visualization svg to this div-->
+    <div id="choropleth"></div>
+    <script>
+
+		// enter code to define margin and dimensions for svg
+        var width = 1200,
+            height = 800;
+            margin = 5;
+
+		// enter code to create svg
+        var svg = d3.select("#choropleth").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .style("margin", margin)
+
+		// enter code to create color scale
+        var colorScheme = d3.schemeReds[4];
+
+		// enter code to define projection and path required for Choropleth
+        var projection = d3.geoEckert4();
+        var path = d3.geoPath().projection(projection);
+
+        Promise.all([
+            d3.csv("static/data/ratings-by-country.csv",function(d) {
+                    return {
+                        Game: d.Game,
+                        Country: d.Country,
+                        user_num: +d["Number of Users"],
+                        average_rating: +d["Average Rating"]
+                    }}),
+            d3.json('static/data/world_countries.json')
+
+        ]).then(function(data) {
+
+            gameData = data[0]
+            world = data[1]
+            selected_game = gameData.filter(function(d){ return d.Game == "6 nimmt!" }) // default game at start up
+            var selected_game_map = d3.map();
+            selected_game.forEach(function(d) {
+                selected_game_map.set(d.Country, d.average_rating);
+            })
+
+            // unique board games
+            var allGames = d3.map(gameData, function(d){return(d.Game)}).keys()
+
+            // adds unique boardgames to dropdown
+            d3.select("#dropdown")
+                .selectAll('myOptions')
+                .data(allGames)
+                .enter()
+                .append("option")
+                .text(function(d){return d;})
+                .attr("value",function(d){return d;});
+
+            // Creates colorscale for choropleth
+            var colorScale = d3.scaleQuantile()
+                .domain(selected_game.map(function(d){ return d.average_rating}))
+                .range(colorScheme);
+
+            // Default Legend
+            var g = svg.append("g")
+                .attr("class", "legend")
+                .attr('transform', 'translate(900,0)')
+            var legend = d3.legendColor()
+                .labelFormat(d3.format(".2f"))
+                .scale(colorScale)
+            svg.select(".legend")
+                .call(legend)
+
+            // Default tool tip
+            var tip = d3.select('body')
+                .append('div')
+                .attr('class', 'tooltip')
+                .attr('style', 'position: absolute; opacity: 0;')
+                .style('background','gray')
+                .style("width","200px")
+                .style("color","white")
+
+
+            // Used to add NA label to countries without a rating
+            function tooltip_ratings(tooltip_game){
+                if (d3.set(tooltip_game).empty() === true){return "N/A"}
+                else {return tooltip_game[0].average_rating }}
+
+            // Used to add NA label to countries without users
+            function tooltip_num_of_users(tooltip_game){
+                if (d3.set(tooltip_game).empty() === true){return "N/A"}
+                else {return tooltip_game[0].user_num }}
+
+            // initialize choropleth map
+            var map = svg.append("g")
+                .attr("class", "countries")
+                .selectAll("path")
+                .data(world.features)
+                .enter()
+                .append("path")
+                .attr("d", path)
+                .attr("fill", function (d){
+                    d.average = selected_game_map.get(d.properties.name) || 0;
+                    if (d.average == 0) {return "gray"}
+                    else {return colorScale(d.average)}
+                })
+                .on("mouseover", function(d) {
+                    tooltip_game = selected_game.filter(function(c){ return c.Country == d.properties.name })
+                    console.log(tooltip_game)
+                    tip.transition()
+                        .duration(200)
+                        .style("opacity", 1);
+                    // adds in all the text to our tool tip
+                    tip.html("Country: " +  d.properties.name + "<br>" +
+                             "Game: " +  d3.select("#dropdown").property("value") + "<br>" +
+                             "Average Rating: " + tooltip_ratings(tooltip_game) + "<br>" +
+                             "Number of Users: " + tooltip_num_of_users(tooltip_game))
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");})
+                .on("mouseout", function(){return tip.style('opacity', 0);});
+
+
+
+
+                    function update(selection) {
+
+                // Filter data based on dropdown selection
+                var filtered_data = gameData.filter(function(d){ return d.Game == selection })
+                var country_ratings_map = d3.map();
+                filtered_data.forEach(function(d) {
+                    country_ratings_map.set(d.Country, d.average_rating);
+                })
+
+                // updates domain of colorscale based on what dataset is chosen
+                colorScale.domain(filtered_data.map(function(d){ return d.average_rating}))
+
+                svg.select(".legend")
+                    .call(legend);
+
+                map
+                    // .transition()
+                    // .duration(100000)
+                    .attr("fill", function (d){
+                        d.average = country_ratings_map.get(d.properties.name) || 0;
+                        if (d.average == 0) {return "gray"}
+                        else 	{
+                            return colorScale(d.average)}
+                    })
+                    .on("mouseover", function(d) {
+                        tooltip_game = filtered_data.filter(function(c){ return c.Country == d.properties.name })
+                        console.log(tooltip_game)
+                        tip.transition()
+                            .duration(200)
+                            .style("opacity", 1);
+                        // tip	.text(d.properties.name)
+                        tip.html("Country: " +  d.properties.name + "<br>" +
+                            "Game: " +  d3.select("#dropdown").property("value") + "<br>" +
+                            "Average Rating: " + tooltip_ratings(tooltip_game) + "<br>" +
+                            "Number of Users: " + tooltip_num_of_users(tooltip_game))
+                            .style("left", (d3.event.pageX) + "px")
+                            .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                    .on("mouseout", function(){return tip.style('opacity', 0);});
+
+            }
+
+            // updates games based on dropdown
+            d3.select("#dropdown").on("change", function(d) {
+                var selectedOption = d3.select(this).property("value")
+                // run the updateChart function with this selected option
+                update(selectedOption)
+        })
+        });
+
+    </script>
+
+</body>
+</html>
