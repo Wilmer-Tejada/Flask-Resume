@@ -9,8 +9,8 @@ profile:
     phone: (661)579-5040
   email: wilmer.tejada@yahoo.com
   description:
-    - Welcome to my website. I am a Data Analyst and Computer Science student with plenty of experience in SQL, Python, and R.
-    - I have also gotten familiar with a some web development which includes Javascript and Flask, which I used to create this website. I am also currently pursuing a second Masters degree in Computer Science with a specialization in Machine Learning. Feel free to visit my LinkedIn/Github in the links below
+    - Welcome to my website. Feel free to scroll down to see some of the projects and work that I have done. I am a Data Scientist/Analyst with over 5 years of experience using SQL, Python, and R.
+    - I am also currently pursuing a second Masters degree in Computer Science with a specialization in Machine Learning. This led me to build this website, which will host both my past experience and current projects.
 
 
 # Social section
@@ -25,7 +25,7 @@ experience:
     position: Research Data Analyst II
     company: San Jose-Evergreen College District
     from: Feb 2019
-    to: Present (2 yrs)
+    to: Present
     description:
       - Created 10+ Power BI dashboards to track key metrics crucial to evaluating performance including enrollment counts, student success rates, retention rates, awards, etc.
       - Wrote 100+ SQL Server queries, sometimes involving millions of records.
@@ -44,22 +44,13 @@ experience:
       - Saved hundreds of work hours for the Institutional Research department by writing scripts (in R) to automate data tasks such as merging and cleaning data, filtering, visualizations, etc.
       - Helped maintain Tableau dashboards.
 
-  #  item2:
-#    position: AI Consultant
-#    company: NULLSEC (Startup)
-#    from: July 2019
-#    to: September 2019
-#    description: >
-#      Working as an AI consultant for NULLSEC, a computer security company focused on ethical hacking. Particularly helping in the development of NullRansom, an analyzer-debugger software with the purpose of filtering TCP protocol requests, preventing preventively being targeted by malware and ransomware viruses.
-#    link: http://www.nullsec.site
-  #reference: https://rodolfoferro.xyz/resume/
 
 
 # Education section
 education:
   item1:
-    institution: Georgia Institute of Technology
-    program: M.S. Computer Science - Machine Learning Specialization
+    institution: M.S. Computer Science
+    program: Georgia Institute of Technology
     description:
       - Artificial Intelligence for Robotics
       - Software Architecture & Design
@@ -72,8 +63,8 @@ education:
     from: January 2019
     to: Present
   item2:
-    institution: California State University, East Bay
-    program: M.S. Statistics
+    institution: M.S. Statistics
+    program: California State University, East Bay
     description:
       - Probability Theory
       - Statistical Theory
@@ -89,8 +80,8 @@ education:
     from: January 2017
     to: May 2019
   item3:
-    institution: University of California, Santa Barbara
-    program: B.S. Statistics
+    institution: B.S. Statistics
+    program: University of California, Santa Barbara
     #description:
     from: September 2012
     to: July 2016
@@ -100,54 +91,29 @@ education:
 
 
 # Skills section
-tools:
-  # Consider that the following are fa icons:
-  #   https://fontawesome.com/icons?d=gallery&s=brands
-  - python
-  - r-project
-  - git-alt
-  - github
-extra_skills:
-  - SQL Server, MySQL
-  - Python – Flask, pandas, NumPy, matplotlib, scikit-learn, etc.
-  - R – dplyr, lubridate, ggplot, odbc, etc.
-  - Power BI
-  - Tableau
-  - Web scraping and web automation using Selenium
-  - Beginner in Javascript
+#tools:
+#  # Consider that the following are fa icons:
+#  #   https://fontawesome.com/icons?d=gallery&s=brands
+#  - python
+#  - r-project
+#  - git-alt
+#  - github
+#extra_skills:
+#  - SQL Server, MySQL
+#  - Python – Flask, pandas, NumPy, matplotlib, scikit-learn, etc.
+#  - R – dplyr, lubridate, ggplot, odbc, etc.
+#  - Power BI
+#  - Tableau
+#  - Web scraping and web automation using Selenium
+#  - Beginner in Javascript
 
 
 # Talks and workshops section
 #workshops:
 #  item0:
-#    event: TEDxUNAMLeón
-#    workshop: AI in modern times, February 2020.
+#    event:
+#    workshop:
 #    material:
-#    link: https://www.ted.com/tedx/events/35293
-#  item1:
-#    event: PyCon Colombia 2020
-#    workshop: 'Workshop – DLaaS: Building cloud-based intelligent solutions, February 2020.'
-#    material: https://github.com/RodolfoFerro/PyConCo20
-#    link: https://www.pycon.co/ponentes/rodolfo-ferro/
-#  item2:
-#    event: International Meeting on Artificial Intelligence and its Applications (RIIAA) 2.0.
-#    workshop: Workshop – Deep Learning as a Service (DLaaS), August 2019.
-#    material: https://github.com/RodolfoFerro/RIIAA19-DLaaS
-#    link: https://riiaa.org
-#  item3:
-#    event: LAB León Web Dev Crash Course 2019.
-#    workshop: Crash Course – Introduction to Web Development with Python and Flask, August 2019.
-#    material: https://github.com/RodolfoFerro/Flask101
-#    link: https://flask101.glitch.me
-#  item4:
-#    event: DevDay León 2019 by Hackademy.
-#    workshop: Workshop – (AI) API development with Python, August 2019.
-#    material: https://github.com/RodolfoFerro/PythonBaseAPI
-#    link:
-#  item5:
-#    event: Clubes de Ciencia México 2019.
-#    workshop: Workshop – Revealing the Hidden Hyperspectrum with Artificial Neurons, July 2019.
-#    material: https://rodolfoferro.xyz/hyperspectrum/
 #    link:
 
 
@@ -155,66 +121,68 @@ extra_skills:
 # Projects section
 projects:
   item1:
-    title: Embedded Power BI
-#    subtitle: Power-BI quick example
-    description: A quick mock up of a Power BI dashboard.
-    link: powerbi
-    github:
-    img: powerbi-white.jpeg
-    tags: [PowerBI]
+    title: Anomaly Detection using Supervised Machine Learning
+    #    subtitle: D3 Javascript library
+    description: Cellular Anomaly Detection with XGBoost, Logistic Regression, KNN, Ranodm Forest, Decision Trees.
+    link: https://github.com/Wilmer-Tejada/Anomaly-Detection-Using-ML
+    github: https://github.com/Wilmer-Tejada/Anomaly-Detection-Using-ML
+    img: correlation-matrix.png
+    tags: [ Supervised Learning ]
+
   item2:
-    title: flask-resume-template
-  #    subtitle: A resume template built with Flask
-    description: An easy-to-configure simple resume template built with Flask and Bootstrap.
+    title: Machine Learning to Optimize Distribution Centers
+    #    subtitle: Google Colab Notebook
+    description: Using weighted K-Means (unsupervised leanring) model to determine optimal distribution centers in the United States. Let's user determine clusters. For detailed explanation see Github.
+    link: https://wilmer-tejada.shinyapps.io/Kmeans_USCities/
+    github: https://github.com/Wilmer-Tejada/Weighted-K-Means-Optimize-U.S.-Distribution
+    img: K-Means.png
+    tags: [ Production Model, K-Means, R Shiny, Python ]
+
+  item3:
+    title: Python Flask Resume
+      #    subtitle: A resume template built with Flask
+    description: The code to build this website!
     link: https://github.com/Wilmer-Tejada/Flask-Resume
     github: https://github.com/Wilmer-Tejada/Flask-Resume
     img: website-image.png
-    tags: [Flask, Python, Bootstrap]
-  item3:
-    title: Dashboard Screenshot Examples
+    tags: [ Flask, Python, Web Dev, Resume ]
+
+  item4:
+    title: Dashboard Screenshots
 #    subtitle: Screenshots of actual production dashboards
-    description: Some of these dashboards are currently being used by upper management.
+    description: Examples of past work in Power BI
     link: dashboard-screenshots
     github:
     img: power-BI.png
     tags: [Power BI, Data Preprocessing]
-  item4:
-    title: D3 Examples
-    subtitle: D3 Javascript library
-    description: Examples of work
-    link: d3-examples
-    github: https://github.com/Wilmer-Tejada/Javascript-D3-Charts
-    img: d3-logo.jpg
-    tags: [D3 Javascript]
+
   item5:
-    title: D3 Choropleth
+    title: Javascript Interactive Visualization
 #    subtitle: Google Colab Notebook
     description: A choropleth map created in D3 using a board games csv and countries JSON file.
     link: d3-choropleth
     github: https://github.com/Wilmer-Tejada/Javascript-D3-Charts
     img: choropleth.png
-    tags: [D3 Javascript, JSON]
-  item6:
-    title: Weighted K-Means to Optimize Distribution
-    #    subtitle: Google Colab Notebook
-    description: A weighted K-Means model to determine optimal distribution centers. Let's user determine clusters. For detailed explanation see Github.
-    link: https://wilmer-tejada.shinyapps.io/Kmeans_USCities/
-    github: https://github.com/Wilmer-Tejada/Weighted-K-Means-Optimize-U.S.-Distribution
-    img: K-Means.png
-    tags: [ K-Means, R Shiny, Python ]
+    tags: [D3 Javascript, JSON, Web Dev]
+#  item6:
+#    title: Embedded Power BI
+#  #    subtitle: Power-BI quick example
+#      description: A quick mock up of a Power BI dashboard.
+#      link: powerbi
+#      github:
+#      img: powerbi-white.jpeg
+#      tags: [PowerBI]
+#  item3:
+#    title: D3 Examples
+#    subtitle: D3 Javascript library
+#    description: Examples of work
+#    link: d3-examples
+#    github: https://github.com/Wilmer-Tejada/Javascript-D3-Charts
+#    img: d3-logo.jpg
+#    tags: [D3 Javascript]
 
 
 # Certifications and awards section
 #awards:
 #  - 'Winner – #TFWorld TF 2.0 Challenge – TensorFlow at Devpost 2020'
-#  - Academy and Technology – Statal Youth Prize Guanajuato 2018
-#  - Quantum Computing 101 – IBM Q Certification Badge 2018
-#  - 1st. Place – HDI Challenge – Talent City Hackathon 2018
-#  - 1st. Place – SWITCH Hackathon 2017
-#  - 1st. Place – IBM Hackapalooza – Bluehack Hackathon 2017
-#  - 1st. Place – 12th. Creativity and Innovation Contest at the University of Guanajuato 2017
-#  - 1st. Place – Centro Fox National Hackathon 2017
-#  - 1st. Place – 6th. Creativity and Innovation Contest, DCEA-UG 2016
-#  - Silver Award – SynBio Giant Jamboree – iGEM  2016
-#  - 1st. Place – 4th. Creativity and Innovation Contest, DCNE-UG 2016
-#  - 1st. Place – Fintech – HackBajío Hackathon 2016
+
