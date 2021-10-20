@@ -32,6 +32,11 @@ def power_bi():
 def dashboard_screenshots():
     return render_template('dashboard-images.html')
 
+@app.route('/iris_prediction')
+def ml_model():
+    return render_template('ml_model/iris.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
     #app.run()

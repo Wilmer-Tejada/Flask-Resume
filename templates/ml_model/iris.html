@@ -1,0 +1,169 @@
+{#https://codepen.io/LewisN/pen/ojJeVO/#}
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:700,300);
+body {
+		background-color: #333;
+}
+
+.predict-modal p,
+
+.logo {
+		fill: #FEFEFE;
+}
+
+.logo-container {
+		width: 100%;
+		margin-top: 50px;
+		position: relative;
+		text-align: center;
+}
+
+.predict-modal {
+		font-family: "Roboto", arial, sans-serif;
+		color: #fefefe;
+		border-style: solid;
+		border-width: 10px;
+		border-color: rgb(254, 254, 254);
+		border-radius: 10px 10px 10px 10px;
+		background-image: -moz-linear-gradient( -90deg, rgb(236, 111, 102) 0%, rgb(243, 161, 131) 100%);
+		background-image: -webkit-linear-gradient( -90deg, rgb(236, 111, 102) 0%, rgb(243, 161, 131) 100%);
+		background-image: -ms-linear-gradient( -90deg, rgb(236, 111, 102) 0%, rgb(243, 161, 131) 100%);
+		width: 90%;
+		min-width: 400px;
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 25px;
+}
+
+.predict-modal form {
+		margin: 0 auto;
+		text-align: center;
+}
+
+.predict-modal input::-webkit-input-placeholder {
+		color: #fefefe;
+		opacity: 1;
+}
+
+.predict-modal input:focus::-webkit-input-placeholder {
+		color: #111;
+		opacity: .5;
+		transition: all 0.3s ease;
+}
+
+.predict-modal .input-container {
+		margin: 10px;
+}
+
+.predict-modal input[type="Setosa Length"],
+.predict-modal input[type="Setosa Width"],
+.predict-modal input[type="Petal Length"],
+.predict-modal input[type="Petal Width"],
+.predict-modal input[type="submit"]:focus {
+		outline: 0;
+}
+
+.predict-modal input[type="Setosa Length"],
+.predict-modal input[type="Setosa Width"],
+.predict-modal input[type="Petal Length"],
+.predict-modal input[type="Petal Width"] {
+		font-weight: 700;
+		font-size: 1.4em;
+		padding: 10px;
+		border-width: 2px;
+		border-color: rgba(247, 247, 247, .3);
+		border-style: solid;
+		background: url('transparent');
+}
+
+.predict-modal input[type="Setosa Length"]:focus,
+.predict-modal input[type="Setosa Width"]:focus,
+.predict-modal input[type="Petal Length"]:focus,
+.predict-modal input[type="Petal Width"]:focus {
+		background: white;
+		transition: all 0.3s ease;
+		color: #222;
+}
+
+.predict-modal a {
+		color: #fefefe;
+		text-decoration: underline;
+}
+
+.predict-modal a:hover {
+		color: #d26960;
+}
+
+.predict-modal input[type="submit"] {
+		font-weight: 700;
+		font-size: 1.8em;
+		color: #111;
+		background: #fefefe;
+		box-shadow: 0px 4px 0px 0px #d26a60;
+		border-style: none;
+		padding: 10px 50px;
+		margin: 25px 0 15px 0;
+		position: relative;
+		display: inline-block;
+		transition: all .1s linear;
+}
+
+.predict-modal input[type="submit"]:active {
+		box-shadow: 0 2px 0 #d26a60;
+		transform: translateY(3px);
+		-webkit-transform: translateY(3px);
+		-ms-transform: translateY(3px);
+}
+
+.predict-modal #close-modal-button {
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		background-color: #d26960;
+		float: right;
+		position: relative;
+		top: -55px;
+		left: 50px;
+		cursor: pointer;
+}
+
+.predict-modal #close-modal-button:before {
+		content: '\2716';
+		font-size: 1.5em;
+		position: relative;
+		top: 10px;
+		left: 17px;
+}
+
+
+{#}#}
+</style>
+
+<br>
+<br>
+<div class="predict-modal">
+
+
+		<div class="logo-container">
+				<img src="static/img/iris/iris_images.png">
+		</div>
+
+		<form class="details">
+				<div class="input-container">
+						<input id="Setosa Length" type="Setosa Length"  placeholder="Setosa Length"  />
+				</div>
+				<div class="input-container">
+						<input id="Setosa Width" type="Setosa Width" placeholder="Setosa Width" />
+				</div>
+				<div class="input-container">
+						<input id="Petal Length" type="Petal Length" placeholder="Petal Length" />
+				</div>
+                <div class="input-container">
+						<input id="Petal Width" type="Petal Width" placeholder="Petal Width" />
+				</div>
+
+				<input id="predict-up-button" type="submit" value="Predict">
+
+		</form>
+</div>
