@@ -12,9 +12,7 @@
 {#</html>#}
 
 <div class="row justify-content-md-center mb-4">
-        <h3 class='text-primary'>Prediction is {{ prediction[0] }}</h3>
-        <img src="static/img/iris/iris_images.png">
-
+        <h1 class='text-primary'>Prediction is {{ prediction[0] }}</h1>
 </div>
 
 {#    <div class="row justify-content-md-center">#}
@@ -41,28 +39,3 @@
 {#        </div>#}
 {#    </div>#}
 
-<div id="popup">
-    <div class="popupcontrols">
-        <span id="popupclose">X</span>
-    </div>
-    <div class="popupcontent">
-        <h1>Some Popup Content</h1>
-    </div>
-</div>
-<script type="text/javascript">
-	// Initialize Variables
-	var closePopup = document.getElementById("popupclose");
-	var overlay = document.getElementById("overlay");
-	var popup = document.getElementById("popup");
-	var button = document.getElementById("button");
-	// Close Popup Event
-	closePopup.onclick = function() {
-	  overlay.style.display = 'none';
-	  popup.style.display = 'none';
-	};
-	// Show Overlay and Popup
-	button.onclick = function() {
-	  overlay.style.display = 'block';
-	  popup.style.display = 'block';
-	}
-</script>

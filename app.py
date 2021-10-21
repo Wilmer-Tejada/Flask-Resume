@@ -61,8 +61,8 @@ def predict():
         # print(test_data)
         prediction = loaded_model.predict(data)
         # # pass prediction to template
-
         return render_template('ml_model/predict.html',prediction=prediction)
+
     pass
 
 
