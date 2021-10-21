@@ -1,5 +1,6 @@
 ###################### In order to run the app enter: python -m flask run
 ###################### has to be in: flask-resume-template folder
+###################### . venv/bin/activate
 # https://eu.pythonanywhere.com/forums/topic/24/
 # scikit learn: we don't support pickling/unpickling across different scikit-learn version
 
@@ -46,21 +47,20 @@ def ml_model():
 def predict():
     if request.method == "POST":
         # get form data
-        sepal_length = request.form.get('Sepal Length')
-        sepal_width = request.form.get('Sepal Width')
+        sepal_length = request.values.get('Setosa Length')
+        sepal_width = request.form.get('Setosa Width')
         petal_length = request.form.get('Petal Length')
         petal_width = request.form.get('Petal Width')
 
         # Load Data
-        filename = 'finalized_model.sav'
         loaded_model = pickle.load(open('model.pkl', 'rb'))
-
+        print([sepal_length, sepal_width, petal_length, petal_width])
         ########## User input would go here:
         data =  np.array([sepal_length, sepal_width, petal_length, petal_width])
         data = data.reshape(1, -1)
         # print(test_data)
         prediction = loaded_model.predict(data)
-        # pass prediction to template
+        # # pass prediction to template
 
         return render_template('ml_model/predict.html',prediction=prediction)
     pass
